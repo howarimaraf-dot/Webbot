@@ -1,0 +1,12 @@
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "ALLOW-FROM https://web.telegram.org"
+    Content-Security-Policy = "frame-ancestors 'self' https://web.telegram.org https://*.telegram.org"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "no-referrer-when-downgrade"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
